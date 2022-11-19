@@ -1,2 +1,2 @@
 # HouseOfCards
-House of cards, with rotation ans collapse/build-up
+House of cards, with rotation and collapse/build-up with a click on the body
