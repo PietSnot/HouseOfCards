@@ -1,0 +1,58 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 okt. 2022, 14:16:15
+    Author     : Piet
+*/
+
+* {
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid red;*/
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    width: 95%;
+    height: 95%;
+    /*padding: 2% 2%;*/
+    /*margin: 20%;*/
+    background-color: #ffb28d;
+    display: grid;
+    grid-auto-columns: auto;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid blue;
+    perspective: 1500px;
+    transform-style: preserve-3d;
+}
+
+body > div {
+    background-color: green;
+    color: blueviolet;
+    transform-style: preserve-3d;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    transition: transform 4s ;
+    transition-timing-function: ease-in-out;
+    transform: rotateX(75deg) rotateY(15deg) rotateZ(25deg);
+    
+}
+
+body > div:hover {
+    transform: rotateX(420deg) rotateY(-190deg) rotateZ(-385deg);
+}
+
+div > div {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+}
